@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8525B8D1BD2A7A6009FCE68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8525B8C1BD2A7A6009FCE68 /* main.m */; };
+		A8525B901BD2A7A6009FCE68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8525B8F1BD2A7A6009FCE68 /* AppDelegate.m */; };
+		A8525B961BD2A7A6009FCE68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8525B941BD2A7A6009FCE68 /* Main.storyboard */; };
+		A8525B981BD2A7A6009FCE68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8525B971BD2A7A6009FCE68 /* Images.xcassets */; };
+		A8525B9B1BD2A7A6009FCE68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8525B991BD2A7A6009FCE68 /* LaunchScreen.xib */; };
+		A8525BA71BD2A7A6009FCE68 /* native_fft_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8525BA61BD2A7A6009FCE68 /* native_fft_testTests.m */; };
+		A8525BB11BD2A852009FCE68 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A8525BB01BD2A852009FCE68 /* ViewController.mm */; };
+		A8525BB31BD2AB50009FCE68 /* FFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8525BB21BD2AB50009FCE68 /* FFT.cpp */; };
+		A8525BB51BD2AD16009FCE68 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8525BB41BD2AD16009FCE68 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8525BA11BD2A7A6009FCE68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8525B7F1BD2A7A6009FCE68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8525B861BD2A7A6009FCE68;
+			remoteInfo = "native-fft-test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8525B871BD2A7A6009FCE68 /* native-fft-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "native-fft-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8525B8B1BD2A7A6009FCE68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8525B8C1BD2A7A6009FCE68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8525B8E1BD2A7A6009FCE68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A8525B8F1BD2A7A6009FCE68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A8525B911BD2A7A6009FCE68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A8525B951BD2A7A6009FCE68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8525B971BD2A7A6009FCE68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A8525B9A1BD2A7A6009FCE68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A8525BA01BD2A7A6009FCE68 /* native-fft-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "native-fft-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8525BA51BD2A7A6009FCE68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8525BA61BD2A7A6009FCE68 /* native_fft_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = native_fft_testTests.m; sourceTree = "<group>"; };
+		A8525BB01BD2A852009FCE68 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = "native-fft-test/ViewController.mm"; sourceTree = "<group>"; };
+		A8525BB21BD2AB50009FCE68 /* FFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FFT.cpp; path = ../bqfft/src/FFT.cpp; sourceTree = "<group>"; };
+		A8525BB41BD2AD16009FCE68 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8525B841BD2A7A6009FCE68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8525BB51BD2AD16009FCE68 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8525B9D1BD2A7A6009FCE68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8525B7E1BD2A7A6009FCE68 = {
+			isa = PBXGroup;
+			children = (
+				A8525BB41BD2AD16009FCE68 /* Accelerate.framework */,
+				A8525BB21BD2AB50009FCE68 /* FFT.cpp */,
+				A8525BB01BD2A852009FCE68 /* ViewController.mm */,
+				A8525B891BD2A7A6009FCE68 /* native-fft-test */,
+				A8525BA31BD2A7A6009FCE68 /* native-fft-testTests */,
+				A8525B881BD2A7A6009FCE68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8525B881BD2A7A6009FCE68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8525B871BD2A7A6009FCE68 /* native-fft-test.app */,
+				A8525BA01BD2A7A6009FCE68 /* native-fft-testTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8525B891BD2A7A6009FCE68 /* native-fft-test */ = {
+			isa = PBXGroup;
+			children = (
+				A8525B8E1BD2A7A6009FCE68 /* AppDelegate.h */,
+				A8525B8F1BD2A7A6009FCE68 /* AppDelegate.m */,
+				A8525B911BD2A7A6009FCE68 /* ViewController.h */,
+				A8525B941BD2A7A6009FCE68 /* Main.storyboard */,
+				A8525B971BD2A7A6009FCE68 /* Images.xcassets */,
+				A8525B991BD2A7A6009FCE68 /* LaunchScreen.xib */,
+				A8525B8A1BD2A7A6009FCE68 /* Supporting Files */,
+			);
+			path = "native-fft-test";
+			sourceTree = "<group>";
+		};
+		A8525B8A1BD2A7A6009FCE68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8525B8B1BD2A7A6009FCE68 /* Info.plist */,
+				A8525B8C1BD2A7A6009FCE68 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8525BA31BD2A7A6009FCE68 /* native-fft-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8525BA61BD2A7A6009FCE68 /* native_fft_testTests.m */,
+				A8525BA41BD2A7A6009FCE68 /* Supporting Files */,
+			);
+			path = "native-fft-testTests";
+			sourceTree = "<group>";
+		};
+		A8525BA41BD2A7A6009FCE68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8525BA51BD2A7A6009FCE68 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8525B861BD2A7A6009FCE68 /* native-fft-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8525BAA1BD2A7A6009FCE68 /* Build configuration list for PBXNativeTarget "native-fft-test" */;
+			buildPhases = (
+				A8525B831BD2A7A6009FCE68 /* Sources */,
+				A8525B841BD2A7A6009FCE68 /* Frameworks */,
+				A8525B851BD2A7A6009FCE68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "native-fft-test";
+			productName = "native-fft-test";
+			productReference = A8525B871BD2A7A6009FCE68 /* native-fft-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8525B9F1BD2A7A6009FCE68 /* native-fft-testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8525BAD1BD2A7A6009FCE68 /* Build configuration list for PBXNativeTarget "native-fft-testTests" */;
+			buildPhases = (
+				A8525B9C1BD2A7A6009FCE68 /* Sources */,
+				A8525B9D1BD2A7A6009FCE68 /* Frameworks */,
+				A8525B9E1BD2A7A6009FCE68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8525BA21BD2A7A6009FCE68 /* PBXTargetDependency */,
+			);
+			name = "native-fft-testTests";
+			productName = "native-fft-testTests";
+			productReference = A8525BA01BD2A7A6009FCE68 /* native-fft-testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8525B7F1BD2A7A6009FCE68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Chris Cannam";
+				TargetAttributes = {
+					A8525B861BD2A7A6009FCE68 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A8525B9F1BD2A7A6009FCE68 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A8525B861BD2A7A6009FCE68;
+					};
+				};
+			};
+			buildConfigurationList = A8525B821BD2A7A6009FCE68 /* Build configuration list for PBXProject "native-fft-test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8525B7E1BD2A7A6009FCE68;
+			productRefGroup = A8525B881BD2A7A6009FCE68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8525B861BD2A7A6009FCE68 /* native-fft-test */,
+				A8525B9F1BD2A7A6009FCE68 /* native-fft-testTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8525B851BD2A7A6009FCE68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8525B961BD2A7A6009FCE68 /* Main.storyboard in Resources */,
+				A8525B9B1BD2A7A6009FCE68 /* LaunchScreen.xib in Resources */,
+				A8525B981BD2A7A6009FCE68 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8525B9E1BD2A7A6009FCE68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8525B831BD2A7A6009FCE68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8525BB31BD2AB50009FCE68 /* FFT.cpp in Sources */,
+				A8525B901BD2A7A6009FCE68 /* AppDelegate.m in Sources */,
+				A8525B8D1BD2A7A6009FCE68 /* main.m in Sources */,
+				A8525BB11BD2A852009FCE68 /* ViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8525B9C1BD2A7A6009FCE68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8525BA71BD2A7A6009FCE68 /* native_fft_testTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8525BA21BD2A7A6009FCE68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8525B861BD2A7A6009FCE68 /* native-fft-test */;
+			targetProxy = A8525BA11BD2A7A6009FCE68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8525B941BD2A7A6009FCE68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8525B951BD2A7A6009FCE68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8525B991BD2A7A6009FCE68 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8525B9A1BD2A7A6009FCE68 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8525BA91BD2A7A6009FCE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/cannam/code/qm/js-dsp-test/fft/native/bqfft",
+					"/Users/cannam/code/qm/js-dsp-test/fft/native/bqvec",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"-DHAVE_VDSP",
+					"-DMALLOC_IS_ALIGNED",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8525BAC1BD2A7A6009FCE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "native-fft-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A8525BAF1BD2A7A6009FCE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "native-fft-testTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/native-fft-test.app/native-fft-test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8525B821BD2A7A6009FCE68 /* Build configuration list for PBXProject "native-fft-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8525BA91BD2A7A6009FCE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8525BAA1BD2A7A6009FCE68 /* Build configuration list for PBXNativeTarget "native-fft-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8525BAC1BD2A7A6009FCE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8525BAD1BD2A7A6009FCE68 /* Build configuration list for PBXNativeTarget "native-fft-testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8525BAF1BD2A7A6009FCE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8525B7F1BD2A7A6009FCE68 /* Project object */;
+}

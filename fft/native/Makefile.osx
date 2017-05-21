@@ -1,0 +1,6 @@
+
+OBJECTS	:= bqfft/src/FFT.o native.o
+CXXFLAGS   := -O3 -ffast-math -DMALLOC_IS_ALIGNED -DHAVE_VDSP -Ibqfft -Ibqvec -std=c++11
+
+native:	   $(OBJECTS)
+	   $(CXX) -o $@ $^ -framework Accelerate
