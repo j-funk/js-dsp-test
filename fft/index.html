@@ -21,6 +21,7 @@
     <script src="cross/FFT.js"></script>
     <script src="kissfft/KissFFT.js"></script>
     <script src="kissfft/FFT.js"></script>
+    <script src="dsp.js/rfft.js"></script>
     <script src="fftw/FFTW.js"></script>
     <script src="fftw/FFT.js"></script>
     <script src="test.js"></script>
@@ -49,6 +50,9 @@
     </tr><tr>
       <td>KissFFT (c2c)</td><td id="kissfftcc-result"></td><td id="kissfftcc-1"></td><td id="kissfftcc-2"></td><td id="kissfftcc-itr"></td>
     </tr><tr>
+    </tr><tr>
+      <td>DSP.js</td><td id="dspjs-result"></td><td id="dspjs-1"></td><td id="dspjs-2"></td><td id="dspjs-itr"></td>
+    </tr><tr>
       <td>Cross</td><td id="cross-result"></td><td id="cross-1"></td><td id="cross-2"></td><td id="cross-itr"></td>
     </tr><tr>
       <td>FFTW</td><td id="fftw-result"></td><td id="fftw-1"></td><td id="fftw-2"></td><td id="fftw-itr"></td>
@@ -67,6 +71,7 @@
     <li><b>Nayuki (C)</b>: Nayuki C implementation compiled with Emscripten, with the sin/cos tables pre-calculated.</li>
     <li><b>Nayuki (C-float)</b>: as Nayuki (C) but using single-precision instead of double-precision floats.</li>
     <li><b>Nockert</b>: double-precision real-complex. Around 25kb.</li>
+    <li><b>DSP.js</b>: (modified from original, see README) single-precision real-complex. Around 12kb.</li>
     <li><b>Dntj</b>: double-precision complex-complex. Forward
     transform is scaled and I've scaled it back again here. Around 10kb.</li>
     <li><b>Cross</b>: double-precision real-complex in C, compiled

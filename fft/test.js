@@ -221,6 +221,31 @@ function testDntj(size) {
     report("dntj", start, middle, end, total);
 }
 
+function testDSPJs(size) {
+
+    var fft = new RFFT(size);
+    var start = performance.now();
+    var middle = start;
+    var end = start;
+
+    total = 0.0;
+
+    for (var i = 0; i < 2*iterations; ++i) {
+        if (i == iterations) {
+            middle = performance.now();
+        }
+        var ri = inputReals(size);
+        var trans = fft.forward(ri);
+        for (var j = 0; j < size / 2; ++j) {
+            total += Math.sqrt(trans[j] * trans[j] + trans[j + (size / 2) - 1] * trans[j + (size / 2) - 1]);
+        }
+    }
+
+    var end = performance.now();
+
+    report("dspjs", start, middle, end, total);
+}
+
 function testCross(size) {
 
     var fft = new FFTCross(size);
@@ -346,7 +371,7 @@ function testFFTW(size) {
 
 var sizes = [ 512, 2048 ];
 var tests = [ testNayuki, testNayukiObj, testNayukiC, testNayukiCF,
-	      testKissFFT, testKissFFTCC, testCross, testFFTW,
+	      testKissFFT, testKissFFTCC, testDSPJs, testCross, testFFTW,
 	      testNockert, testDntj ];
 var nextTest = 0;
 var nextSize = 0;
