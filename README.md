@@ -8,6 +8,6 @@ languages using Emscripten or similar. Only forward transforms are tested at thi
 
 You can run these tests in a browser by checking out this repo and opening the file `fft/index.html`.
 
-I've added a modified version of the DSP.js FFT, but if you like you can see 
+I've added a modified version of the DSP.js FFT and a Real-to-Real algorithm from FFTW. If you like you can see 
 the original Mercurial repository by Chris Cannam 
 (from which this is forked) [here](https://code.soundsoftware.ac.uk/projects/js-dsp-test).
