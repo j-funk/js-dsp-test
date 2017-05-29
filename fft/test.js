@@ -369,9 +369,37 @@ function testFFTW(size) {
     fft.dispose();
 }
 
+function testRFFTW(size) {
+
+    var fft = new RFFTW(size);
+
+    var start = performance.now();
+    var middle = start;
+    var end = start;
+
+    total = 0.0;
+
+    for (var i = 0; i < 2*iterations; ++i) {
+        if (i == iterations) {
+            middle = performance.now();
+        }
+        var ri = inputReals(size);
+        var trans = fft.forward(ri);
+        for (var j = 0; j < size / 2; ++j) {
+            total += Math.sqrt(trans[j] * trans[j] + trans[j + (size / 2) - 1] * trans[j + (size / 2) - 1]);
+        }
+    }
+
+    var end = performance.now();
+
+    report("rfftw", start, middle, end, total);
+
+    fft.dispose();
+}
+
 var sizes = [ 512, 2048 ];
 var tests = [ testNayuki, testNayukiObj, testNayukiC, testNayukiCF,
-	      testKissFFT, testKissFFTCC, testDSPJs, testCross, testFFTW,
+	      testKissFFT, testKissFFTCC, testDSPJs, testCross, testFFTW, testRFFTW,
 	      testNockert, testDntj ];
 var nextTest = 0;
 var nextSize = 0;
