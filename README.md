@@ -1,6 +1,8 @@
 A quick evaluation of some FFT jobs in Javascript.
 
-Packaged Javascript versions of [FFTW](https://github.com/j-funk/fftw-js) and [KissFFT](https://github.com/j-funk/kissfft-js).
+Packaged Javascript versions of the
+[FFTW](https://github.com/j-funk/fftw-js) and [KissFFT](https://github.com/j-funk/kissfft-js) modules 
+benchmarked here are available.
  
 ![](screenshot.png)
 *Running in Chrome 62 on OSX*
